@@ -10,5 +10,8 @@ RSpec.describe StringCalculator do
       expect(StringCalculator.add("5")).to eq(5)
     end
 
+    it 'returns total of all the numbers' do
+      expect(StringCalculator.add("2,3")).to eq(5)
+    end
   end
 end
